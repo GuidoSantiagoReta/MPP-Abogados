@@ -533,7 +533,9 @@
         font-weight: 500;
         
     }
-
+    .navbar-nav {
+        margin-bottom: 112px;
+    }
 
 /* */
 
