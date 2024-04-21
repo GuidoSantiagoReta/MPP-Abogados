@@ -63,14 +63,17 @@ background: #0f0c29;
     transition: opacity 0.3s ease-in-out; 
     
 }
-
+.nav-link.active::after {
+    opacity: 1;
+}
 .nav-link a:hover {
     font-weight: 600; 
-      
+    
 }
 
 .nav-link:hover::after {
     opacity: 1; 
+    font-weight: 600; 
 }
 
 .navbar-brand img{
