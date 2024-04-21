@@ -3,7 +3,7 @@
 :root {
     --color-n1: #12141d;
     --color-n2: #272c3f;
-    --color-n3: #7cafdb;
+    --color-n3: #00936F;
     --color-n3-5: #47627c;
     --color-n4: #8e8f93;
     --color-n5: #ffffff;
@@ -25,7 +25,7 @@
  
 .menu-bar{
   
-    background: #0f0c29; 
+background: #0f0c29; 
   background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #24243e); 
   background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
  
@@ -37,7 +37,7 @@
     margin: 5vh;
     color: rgb(255, 255, 255)!important;
     font-weight: 500;
-    
+    position: relative; 
 }
 
 
@@ -48,10 +48,29 @@
     outline: none!important;
     border: none!important;
 }
-  
-.nav-link:hover{
-    font-weight: 600;
-    border-bottom: 1px solid #fff;
+
+
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px; 
+    background-color: #00936F; 
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+    
+}
+
+.nav-link a:hover {
+    font-weight: 600; 
+      
+}
+
+.nav-link:hover::after {
+    opacity: 1; 
 }
 
 .navbar-brand img{
@@ -68,7 +87,9 @@
     
   }
 
-
+.nav-link{
+    transition: none;
+}
   
 .d-block{
     height: 800px;
@@ -368,7 +389,6 @@
     font-weight: 400;
     padding: 1rem 1rem;
     margin-bottom: 1.5rem;
-    --color-n3: #7cafdb;
     font-size: 1.1rem;
     line-height: 1.6rem;
     background-color: transparent;
@@ -623,11 +643,7 @@
         border: none!important;
     }
       
-    .nav-link:hover{
-        font-weight: 600;
-        border-bottom: 1px solid #fff;
-    }
-    
+   
     .navbar-brand img{
         width: 120px;
         margin-top: 1px;
@@ -961,7 +977,7 @@
     font-weight: 400;
     padding: 1rem 1rem;
     margin-bottom: 1.5rem;
-    --color-n3: #7cafdb;
+    color: var(--color-n3);
     font-size: 1.1rem;
     line-height: 1.6rem;
     background-color: transparent;
