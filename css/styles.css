@@ -100,11 +100,14 @@ background: #0f0c29;
 
  
 /*carousel*/
+
 .carousel-caption{
     font-size: 20px;
+    text-shadow: 1px 1px 1px black;
 }
   .d-block{
     width: 10%;
+    filter: brightness(50%);
   }
 /*carousel*/
 
