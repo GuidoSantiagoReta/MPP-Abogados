@@ -380,7 +380,7 @@ background: #0f0c29;
     border: 0.125rem solid var(--color-n2);
     border-bottom: 0.125rem solidvar(--color-n3);
     outline: none;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 0.5rem;
     transition: border 0.4s ease-out;
 }
 
@@ -968,7 +968,7 @@ background: #0f0c29;
     border: 0.125rem solid var(--color-n2);
     border-bottom: 0.125rem solidvar(--color-n3);
     outline: none;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 0.5rem;
     transition: border 0.4s ease-out;
 }
 
