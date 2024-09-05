@@ -107,11 +107,16 @@ background: #0f0c29;
 .carousel-caption{
     font-size: 20px;
     text-shadow: 1px 1px 1px black;
+  
+   
 }
-  .d-block{
-    width: 10%;
+.d-block {
+    width: 100%;
+    min-height: 500px;
+    max-height: 800px; 
+    object-fit: cover; 
     filter: brightness(50%);
-  }
+ }
 /*carousel*/
 
 
@@ -1113,8 +1118,13 @@ background: #0f0c29;
     margin: 2rem;
 }
 
-/*.btn-wpp {
-
-  }
-*/
 }
+
+
+@media screen and (max-width: 767px) {
+    
+    .carousel-caption {
+      display: block !important;
+      font-size: 15px;
+    }
+  }
